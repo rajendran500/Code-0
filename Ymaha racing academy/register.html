@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="logo.avif">
+    <link rel="stylesheet " href="index.css">
+
+</head>
+<body style="background-color: black;" >
+    <h1><img src="energy.png"  alt="logo" width="150" hight="150">Registration Form </h1>
+<form action="/register" method="post">
+    <!-- Full Name -->
+    <label for="full_name">Full Name:</label><br>
+    <input type="text" id="full_name" name="full_name" required><br><br>
+  
+    <!-- Age -->
+    <label for="age">Age:</label><br>
+    <input type="number" id="age" name="age" min="18" required><br><br>
+  
+    <!-- Date of Birth -->
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+  
+    <!-- Gender -->
+    <label for="gender">Gender:</label><br>
+    <input type="radio" id="male" name="gender" value="Male" required>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="Female" required>
+    <label for="female">Female</label><br>
+    <input type="radio" id="other" name="gender" value="Other">
+    <label for="other">Other</label><br><br>
+  
+    <!-- Contact Information -->
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+  
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+  
+    <!-- Emergency Contact Information -->
+    <label for="emergency_contact">Emergency Contact Name:</label><br>
+    <input type="text" id="emergency_contact" name="emergency_contact" required><br><br>
+  
+    <label for="emergency_phone">Emergency Contact Phone:</label><br>
+    <input type="tel" id="emergency_phone" name="emergency_phone" pattern="[0-9]{10}" required><br><br>
+  
+    <!-- Experience Level -->
+    <label for="experience">Riding Experience Level:</label><br>
+    <select id="experience" name="experience" required>
+      <option value="Beginner">Beginner</option>
+      <option value="Intermediate">Intermediate</option>
+      <option value="Advanced">Advanced</option>
+    </select><br><br>
+  
+    <!-- Type of Bike -->
+    <label for="bike_type">Type of Bike:</label><br>
+    <input type="text" id="bike_type" name="bike_type" required><br><br>
+  
+    <!-- Medical Conditions -->
+    <label for="medical_conditions">Do you have any medical conditions?</label><br>
+    <textarea id="medical_conditions" name="medical_conditions" rows="4" cols="50"></textarea><br><br>
+  
+    <!-- Waiver Agreement -->
+    <label for="waiver">I agree to the terms and conditions of the academy:</label><br>
+    <input type="checkbox" id="waiver" name="waiver" value="agree" required> I agree<br><br>
+  
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+
+  </form>
+<br>
+   <a href="index.html">Home </a> | <a href="About us .html">About us </a>
+</body>
